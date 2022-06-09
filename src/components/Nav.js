@@ -1,6 +1,6 @@
 import Counter from "./Counter";
 
-function Nav({ menu, name, count, setCount}) {
+function Nav({ menu, count, setCount}) {
     return (
       <nav id="nav_container">
         <ul>
@@ -8,7 +8,7 @@ function Nav({ menu, name, count, setCount}) {
             return <li>{item}</li>;
           })}
         </ul>
-        <Counter name={name} count={count} setCount={setCount} />
+        <Counter  count={count} setCount={setCount} />
       </nav>
     );
   }

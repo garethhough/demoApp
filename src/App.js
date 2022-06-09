@@ -10,10 +10,10 @@ function App() {
   const [count, setCount] = useState(0);
   
   const menu = ["About", "Portfolio", "Blog", "Home"];
-  const name = "Gareth"
+ 
   return (
     <div id="app_container">
-      <Nav menu={menu} name={name} count={count} setCount={setCount} />
+      <Nav menu={menu} count={count} setCount={setCount} />
  
       <div id="counter">
         {count % 2 === 0 ? <h1>The count is {count}</h1> : <h1>Not Even</h1> }
